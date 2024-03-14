@@ -1,4 +1,23 @@
 body {
     background-color: beige;
 }
+.container {
+    display: flex;
+    height: 100%;
+}
+#right-side{
+    flex: 1; /*both sides equal space */
+    border: 1px solid #ccc; /* borders to separate the sides */
+    padding: 20px; /*spacing */
+}
+#left-side{
+    flex: 1; 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+}
+#skills-table{
+    flex:auto;
+    
+}
+
 
