@@ -51,7 +51,12 @@
                         <tr>
                             <th>Github:</th>
                             <td>
-                                <a class="button" href="https://github.com/AnguitaV">https://github.com/AnguitaV</a>
+                                <button type="button" class="btn btn-secondary" id="liveAlertBtn">
+                                    https://github.com/AnguitaV
+                                </button>
+                                <div id="liveAlertPlaceholder">
+                                    <!--Empty div: created in script.js-->
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -108,6 +113,7 @@
             </div>
             <!--END OF COLUMN 2 (SKILLS TABLE)-->
 
+            <!--TEXT INPUT AND BUTTON-->
             <div class="col">
                 <div class="container-fluid">
                     <h5 class="column-title">
@@ -115,7 +121,7 @@
                     </h5>
                     <div class="change-text d-flex">
                         <input type="text" class= "form-control flex-grow-1 mr-2" id="text-input" placeholder="Enter text...">
-                        <button type="button" class="btn btn-primary" id="enter-button">Enter</button>
+                        <button type="button" class="btn btn-secondary" id="enter-button">Enter</button>
                     </div>
                     <h1 id="output">This text will change to what you type and enter!</h1>
                     <script src="script.js"></script>  
@@ -129,18 +135,18 @@
         <!--PERSONAL SUMMARY-->
         <p>
             <b id="summary-title"><br>Personal Summary:</b>
-            <br>
-            <br>My name is Tomás Anguita, I'm a fourth year student in 
-            <br>Computer Engineering at Universidad de Los Andes. I was
-            <br>born in Santiago, Chile on January 21st 1999. When I was
-            <br>only one, My family moved to the US and we lived there for  
-            <br>about eight years. When we came back, I went to school at 
-            <br>Colegio San Francisco de Asís, where I graduated in 2017.
-            <br>My main hobbies are playing musical instruments, such as guitar
-            <br>and piano, and sports. I currently play basketball for the
-            <br>University team. I've always loved what you can acomplish by 
-            <br>learning how to program, so that's why I chose this carreer.
             <br><br>
+            My name is Tomás Anguita, I'm a fourth year student in 
+            Computer Engineering at Universidad de Los Andes. I was
+            born in Santiago, Chile on January 21st 1999. When I was
+            only one, My family moved to the US and we lived there for  
+            about eight years. When we came back, I went to school at 
+            Colegio San Francisco de Asís, where I graduated in 2017.
+            My main hobbies are playing musical instruments, such as guitar
+            and piano, and sports. I currently play basketball for the
+            University team. I've always loved what you can acomplish by 
+            learning how to program, so that's why I chose this carreer.
+            <br>
         </p>
     </div>
     <!--Include Bootstrap JS components-->

@@ -26,3 +26,23 @@ input.addEventListener('keypress', function(event) {
         handleInput();
     }
 });
+
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}<br/>If you do click here:  <a class="button" href="https://github.com/AnguitaV">https://github.com/AnguitaV</a></div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert("Are you sure you want to leave this page?", 'secondary')
+  })
+}
