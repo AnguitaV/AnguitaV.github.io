@@ -32,7 +32,7 @@ const appendAlert = (message, type) => {
   const wrapper = document.createElement('div')
   wrapper.innerHTML = [
     `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}<br/>If you do click here:  <a class="button" href="https://github.com/AnguitaV">https://github.com/AnguitaV</a></div>`,
+    `   <div>${message}<br/>If you do click here:  <a class="button" id="link-button" href="https://github.com/AnguitaV">https://github.com/AnguitaV</a></div>`,
     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
     '</div>'
   ].join('')
@@ -46,3 +46,10 @@ if (alertTrigger) {
     appendAlert("Are you sure you want to leave this page?", 'secondary')
   })
 }
+
+// Remove default outline on accordion buttons when clicked
+document.addEventListener('click', function(event) {
+    if (event.target.classList.contains('accordion-button')) {
+      event.target.blur(); // Remove focus from the clicked button
+    }
+  });
