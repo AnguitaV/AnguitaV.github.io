@@ -7,17 +7,24 @@ body{
 }
 
 #page-title{
-    font-family:cursive;
-    color: black;
+    font-family: Arial Black, sans-serif;
+    color: white;
     font-weight: bolder;
     font-size: larger;
-    text-decoration: underline;
     text-align: center;
     padding:20px;
+    background-color: darkblue;
 }
+
 .col{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.column-title{
+    font-family: Impact, sans-serif;
+    text-align: center;
+    text-decoration: underline;
 }
 
 #info-table{
@@ -26,6 +33,8 @@ body{
 
 
 #summary-title{
+    font-family: Impact, sans-serif;
+    font-size: x-large;
     text-decoration: underline;
 }
 
@@ -45,16 +54,14 @@ body{
     height: 100%;
 }
 .header{
-    color: antiquewhite;
-    background-color: blue;
+    color: white;
+    background-color: darkblue;
     text-align: center;
 }
 .table-data{
     border:1px solid black;   
 }
-#enter-button{
-    background-color: aliceblue;
-}
+
 #output{
     color:darkblue
 }
