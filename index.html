@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <title>Personal Info Web Page</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="container">
-            <div id="right-side">
-                <div id="page-title">
-                    <h1>Welcome to my personal info web page!</h1>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <!--include Bootstrap via CDN:-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
+    <title>Personal Info Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--PAGE TITLE DIV (ALWAYS FULL PAGE WIDTH)-->
+    <div class= "container-fluid" id="page-title">
+        <h1>Welcome to my personal info web page!</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row align-items-start">
+
+            <!--COLUMN 1 BASIC INFO-->
+            <div class="col"> 
+                <div class="container-fluid"> 
+                    <!--BASIC INFO TABLE-->
                     <table id="info-table">
                         <tr>
                             <th>Name:</th>
@@ -39,19 +51,13 @@
                             </td>
                         </tr>
                     </table>
-                    <p id="personal-summary"><b id="summary-title"><br>Personal Summary:</b><br>
-                                            <br>My name is Tomás Anguita, I'm a fourth year student in 
-                                            <br>Computer Engineering at Universidad de Los Andes. I was
-                                            <br>born in Santiago, Chile on January 21st 1999. When I was
-                                            <br>only one, My family moved to the US and we lived there for  
-                                            <br>about eight years. When we came back, I went to school at 
-                                            <br>Colegio San Francisco de Asís, where I graduated in 2017.
-                                            <br>My main hobbies are playing musical instruments, such as guitar
-                                            <br>and piano, and sports. I currently play basketball for the
-                                            <br>University team. I've always loved what you can acomplish by 
-                                            <br>learning how to program, so that's why I chose this carreer.
-                                            <br><br>
-                    </p>
+                </div>
+            </div>
+            <!--END OF COLUMN 1 (BASIC INFO)-->
+        
+        <!--COLUMN 2 SKILLS TABLE-->
+            <div class="col">
+                <div class="container-fluid">
                     <table id="skills-table">
                         <tr class="header">
                             <td class="table-data"><b>Skill</b></td>
@@ -94,15 +100,45 @@
                             <td class="table-data">Native</td>
                         </tr>
                     </table>
+                </div>
             </div>
-            <div id="left-side">
+            <!--END OF COLUMN 2 (SKILLS TABLE)-->
+
+            <div class="col">
+                <div class="container-fluid">
                     <div class="change-text">
                         <input type="text" id="text-input" placeholder="Enter text...">
                         <button id="enter-button">Enter</button>
                     </div>
                     <h1 id="output">This text will change to what you type and enter!</h1>
-                    <script src="script.js"></script>      
+                    <script src="script.js"></script>  
+            <!--END OF COLUMN 3 (INTERACTIVE SPACE)-->    
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+
+    <div class="container-fluid" id="personal-summary">
+        <!--PERSONAL SUMMARY-->
+        <p>
+            <b id="summary-title"><br>Personal Summary:</b>
+            <br>
+            <br>My name is Tomás Anguita, I'm a fourth year student in 
+            <br>Computer Engineering at Universidad de Los Andes. I was
+            <br>born in Santiago, Chile on January 21st 1999. When I was
+            <br>only one, My family moved to the US and we lived there for  
+            <br>about eight years. When we came back, I went to school at 
+            <br>Colegio San Francisco de Asís, where I graduated in 2017.
+            <br>My main hobbies are playing musical instruments, such as guitar
+            <br>and piano, and sports. I currently play basketball for the
+            <br>University team. I've always loved what you can acomplish by 
+            <br>learning how to program, so that's why I chose this carreer.
+            <br><br>
+        </p>
+    </div>
+    <!--Include Bootstrap JS components-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+</body>
 </html>

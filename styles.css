@@ -6,18 +6,6 @@ body{
     height: 100%;
 }
 
-#right-side{
-    flex: 1; /*both sides equal space */
-    border: 1px solid #ccc; /* borders to separate the sides */
-    padding: 20px; /*spacing */
-}
-
-#left-side{
-    flex: 1; 
-    border: 1px solid #ccc; 
-    padding: 20px; 
-}
-
 #page-title{
     font-family:cursive;
     color: black;
@@ -25,11 +13,18 @@ body{
     font-size: larger;
     text-decoration: underline;
     text-align: center;
+    padding:20px;
+}
+.col{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #info-table{
     text-align: left;
 }
+
+
 #summary-title{
     text-decoration: underline;
 }
@@ -38,12 +33,16 @@ body{
     background-color: aliceblue;
     border:1px solid black;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #skills-table{
     border:1px solid black;
     border-collapse: collapse;
     background-color: aliceblue;
+    width: 100%;
+    height: 100%;
 }
 .header{
     color: antiquewhite;
